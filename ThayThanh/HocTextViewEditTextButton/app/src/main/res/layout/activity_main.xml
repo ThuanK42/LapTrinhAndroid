@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/tittle"
+        android:textColor="#111979"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/firstName"/>
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintFirstName"
+            android:autofillHints=""
+            android:text=""/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/lastName"/>
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintLastName"
+            android:autofillHints=""
+            android:text=""/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/email"/>
+
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/password"/>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPass"
+            android:text=""/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/password2"/>
+
+
+        <EditText
+            android:id="@+id/txtPasswordAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintPass"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#3F51B5"
+            android:text="@string/btnRegister"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#EDF1F1"
+            android:textSize="20dp"
+            android:typeface="normal"/>
+    </LinearLayout>
+</LinearLayout>
