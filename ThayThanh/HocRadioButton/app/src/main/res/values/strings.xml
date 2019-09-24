@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HocRadioButton</string>
+    <string name="app_title">Moi ban danh gia mon an nha hang</string>
+    <string name="app_rad1Star">DM Mon an nhu **** Tra tien t ve</string>
+    <string name="app_rad2Star">Hoi te</string>
+    <string name="app_rad3Star">Ngon</string>
+    <string name="app_rad4Star">Kha tuyet</string>
+    <string name="app_rad5Star">Tuyet voi</string>
+    <string name="app_btnBinhChon">Vote</string>
+</resources>

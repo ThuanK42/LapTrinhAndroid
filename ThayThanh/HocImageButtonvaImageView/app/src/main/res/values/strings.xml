@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HocImageButtonvaImageView</string>
+    <string name="app_title">Ban muon hien thi hinh nao ?</string>
+    <string name="app_radAnime">Anime</string>
+    <string name="app_raddog1">Anh cun de thuong 1</string>
+    <string name="app_raddog2">Anh cun de thuong 2</string>
+    <string name="app_btnChon">Chon</string>
+</resources>

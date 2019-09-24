@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb" />
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb2" />
+
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb3" />
+
+            <CheckBox
+                android:id="@+id/chk4"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb4" />
+
+            <CheckBox
+                android:id="@+id/chk5"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb5" />
+
+            <CheckBox
+                android:id="@+id/chk6"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:text="@string/app_cb6" />
+
+            <Button
+                android:id="@+id/btnChon"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="@string/app_btnChon"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="@string/app_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNoidung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_hint" />
+
+            <EditText
+                android:id="@+id/txtNoidung2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_hint2" />
+
+            <EditText
+                android:id="@+id/txtNoidung3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_hint3" />
+
+            <Button
+                android:id="@+id/btnGui"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="@string/app_btnGui"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

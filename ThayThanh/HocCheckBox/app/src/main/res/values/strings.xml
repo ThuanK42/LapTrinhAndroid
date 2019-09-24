@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_title">Ban thich xem the loai phim nao trong rap chieu phim ?</string>
+    <string name="app_content">The loai ban da chon la: </string>
+    <string name="app_cb">khoa học viễn tưởng</string>
+    <string name="app_cb2">hoạt hình.</string>
+    <string name="app_cb3">phim kinh dị</string>
+    <string name="app_cb4">phim tình cảm lãng mạn.</string>
+    <string name="app_cb5">phim trinh tham</string>
+    <string name="app_cb6">Khac</string>
+    <string name="app_hint">Cac the loai ban da chon se hien thi o day</string>
+    <string name="app_hint2">Tai sao ban chon the loai nay ? </string>
+    <string name="app_hint3">Hay du doan bao nhieu nguoi co cau tra loi giong ban</string>
+    <string name="app_btnChon">Chon the loai phim</string>
+    <string name="app_btnGui">Gui cau tra loi</string>
+
+
+</resources>
