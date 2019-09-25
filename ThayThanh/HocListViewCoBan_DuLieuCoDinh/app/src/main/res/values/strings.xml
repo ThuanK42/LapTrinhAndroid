@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HocListViewCoBan_DuLieuCoDinh</string>
+    <string-array name="Lich">
+        <item>Thu 2</item>
+        <item>Thu 3</item>
+        <item>Thu 4</item>
+        <item>Thu 5</item>
+        <item>Thu 6</item>
+        <item>Thu 7</item>
+        <item>Chu Nhat</item>
+    </string-array>
+</resources>
