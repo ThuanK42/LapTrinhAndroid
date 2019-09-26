@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HocSpinner</string>
+    <string name="app_txtTen">Tên nhân viên</string>
+    <string name="app_txtNgayCongTac">Chọn thứ bắt đầu đi công tác: </string>
+    <string name="app_txtNgayDuKien">Nhập số ngày công tác dự kiến: </string>
+    <string name="app_btnXacNhan">Xác Nhận Công Tác</string>
+
+</resources>
