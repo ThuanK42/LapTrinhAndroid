@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/txtTen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnGoi"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:src="@drawable/call"/>
+        <ImageButton
+            android:id="@+id/btnNhanTin"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:src="@drawable/messenger"/>
+        <ImageButton
+            android:id="@+id/btnChiTiet"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:src="@drawable/details"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="1dp"
+        android:background="@android:color/holo_green_light"
+        />
+
+</LinearLayout>
