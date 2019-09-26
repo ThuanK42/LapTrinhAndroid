@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_light"
+    android:textColor="@android:color/holo_red_dark"
+    android:text="Kết quả giải phương trình bậc 2"
+    android:textSize="20sp"
+    android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnTroLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở lại"
+        android:background="@android:color/holo_blue_light"
+        android:layout_gravity="center"/>
+</LinearLayout>
