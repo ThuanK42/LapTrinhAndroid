@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,9 +48,20 @@ public class DanhBaAdapter extends ArrayAdapter<DanhBa> {
         ImageButton btnChiTiet = (ImageButton) row.findViewById(R.id.btnChiTiet);
 
         //Trả về danh bạ điện thoại muốn vẽ
-        DanhBa danhBa=this.objects.get(position);
+        final DanhBa danhBa=this.objects.get(position);
         txtTen.setText(danhBa.getTen());
         txtPhone.setText(danhBa.getPhone());
+
+        btnChiTiet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                xuLyXemChiTiet(danhBa);
+            }
+        });
         return row;
+    }
+
+    private void xuLyXemChiTiet(DanhBa danhBa) {
+        Toast.makeText(this.context,"Bạn chọn: "+danhBa.getTen(),Toast.LENGTH_LONG).show();
     }
 }
