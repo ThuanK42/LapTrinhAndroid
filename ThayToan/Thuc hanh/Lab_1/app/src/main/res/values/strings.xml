@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string name="txtName">Họ và tên</string>
+    <string name="txtPhone">Điện thoại</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtAddress">Địa chỉ</string>
+    <string name="txtGroup">Nhóm với ai (nếu có)</string>
+</resources>
