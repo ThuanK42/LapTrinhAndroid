@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomLayout</string>
+    <string name="app_title">Quản Lý Kho Hàng</string>
+    <string name="maHang">Mã Hàng</string>
+    <string name="tenHang">Tên Hàng</string>
+    <string name="loaiHang">Loại Hàng</string>
+    <string name="btnSach">Sách,Báo</string>
+    <string name="btnBut">Bút,Viết</string>
+    <string name="danhSach">Danh sách hàng hóa:</string>
+</resources>
