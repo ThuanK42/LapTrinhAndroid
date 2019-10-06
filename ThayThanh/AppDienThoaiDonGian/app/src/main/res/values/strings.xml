@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dien Thoai Co Ban</string>
+    <string name="soDienThoai">Số phone liên lạc: </string>
+    <string name="noiDungTinNhan">Nội dung tin nhắn: </string>
+    <string name="btnQuaySo">Quay Số</string>
+    <string name="btnGoi">Gọi Luôn</string>
+    <string name="btnNhanTin">Nhắn tin</string>
+    <string name="tinNhan">Tôi yêu bà á Tâm, T thích bà thiệt sự!</string>
+</resources>
