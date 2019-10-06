@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NhanTinActivity">
+
+    <TextView
+        android:id="@+id/txtNguoiNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Người nhận ở đây"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:text="Nội dung tin nhắn:" />
+
+    <EditText
+        android:id="@+id/txtNoiDungTinNhan"
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:gravity="top"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnGuiTinNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/send" />
+</LinearLayout>
