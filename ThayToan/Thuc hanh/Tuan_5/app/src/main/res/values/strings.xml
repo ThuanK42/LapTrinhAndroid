@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex_Module3_Bai3</string>
+    <string name="title_spinner">Title:</string>
+    <string name="content">Danh sách nhân viên</string>
+    <string name="btnDOM">DOM</string>
+    <string name="btnSAX">SAX</string>
+</resources>

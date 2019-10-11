@@ -1,4 +1,6 @@
-package com.thuannluit.elements;
+package com.thuannluit.models;
+
+import androidx.annotation.NonNull;
 
 public class Employee {
     private String id, title, name, phone;
@@ -43,5 +45,11 @@ public class Employee {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.id + " - " + this.name + " - " + this.phone;
     }
 }
