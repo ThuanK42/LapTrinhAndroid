@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDOM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi File" />
+
+        <Button
+            android:id="@+id/btnSAX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230sp"
+            android:text="Doc File" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="50sp"-->
+<!--            android:layout_height="50sp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="Title:"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/dsTittle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50sp" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+</LinearLayout>
