@@ -39,7 +39,7 @@ public class StudentAdapter extends ArrayAdapter<Student> {
         // gan gia tri
         Student student = this.objects.get(position);
 
-        textView.setText(student.getMasv() + "-" + student.getTensv() + "-" + student.getMalop());
+        textView.setText(student.toString());
 
         return row;
     }

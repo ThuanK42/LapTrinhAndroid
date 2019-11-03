@@ -42,6 +42,8 @@ public class Classroom {
     @NonNull
     @Override
     public String toString() {
-        return malop.toString() +" - "+tenlop.toString()+" - "+String.valueOf(siso);
+        return "Ma Lop: " + malop.toString() +"\n"
+                + "Ten lop: " + tenlop.toString() +"\n"
+                + "Si so: " + siso;
     }
 }

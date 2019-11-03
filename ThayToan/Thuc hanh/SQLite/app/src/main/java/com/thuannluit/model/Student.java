@@ -1,5 +1,7 @@
 package com.thuannluit.model;
 
+import androidx.annotation.NonNull;
+
 public class Student {
     private String masv, tensv, malop;
 
@@ -39,5 +41,13 @@ public class Student {
 
     public void setMalop(String malop) {
         this.malop = malop;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Ma lop: " + malop.toString() + "\n"
+                + "MSSV: " + masv.toString() + "\n"
+                + "Ten sinh vien: " + tensv.toString();
     }
 }

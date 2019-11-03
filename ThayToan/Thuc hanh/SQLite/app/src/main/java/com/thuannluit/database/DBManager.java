@@ -26,7 +26,6 @@ public class DBManager {
     public static final String DATABASE_NAME = "QLSINHVIEN.sqlite";
     private static final String DATABASE_PATH = "/data/data/com.thuannluit.learnsqlite/databases/";
 
-
     private static final String tbllop = "tbllop";
     private static final String malop = "malop";
     private static final String tenlop = "tenlop";
@@ -37,11 +36,13 @@ public class DBManager {
     private static final String tensv = "tensv";
 
 
+    // mo database -  quyen doc ghi
     public SQLiteDatabase openDatabase() {
         mysql = SQLiteDatabase.openDatabase(DATABASE_PATH + DATABASE_NAME, null, SQLiteDatabase.OPEN_READWRITE);
         return mysql;
     }
 
+    // check bang co ton tai hay khong
     public boolean checkForTableExists(String table) {
         List<String> list = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = openDatabase();
@@ -63,7 +64,23 @@ public class DBManager {
         return false;
     }
 
+    // rong thi true, co data thi false
+    private boolean checkTableIsEmpty(String table) {
+        boolean result = true;
+        mysql = openDatabase();
+        String count = "select count(*) from " + table;
+        Cursor cursor = mysql.rawQuery(count, null);
+        cursor.moveToFirst();
+        int count_row = cursor.getInt(0);
+        if ((count_row > 0)) {
+            result = false;
+        }
+        return result;
+    }
+
     // tao database
+    // -> lay database co san trong assets
+    // -> hoac tao moi hoan toan
     public SQLiteDatabase createDatabase(Context activity) {
         try {
 
@@ -227,17 +244,17 @@ public class DBManager {
         }
     }
 
-    public void updateClass(Context context, String id_lop, String tenlopmoi, int sisomoi) {
+    public void updateStudent(Context context, String id_sv, String tenmoi) {
         mysql = openDatabase();
         File tmpFile = new File(DATABASE_PATH + DATABASE_NAME);
         String msg = "";
         if (tmpFile.exists()) {
-            if (checkForTableExists(tbllop) == true) {
-                ContentValues values = new ContentValues();
-                values.put(tenlop, tenlopmoi);
-                values.put(siso, sisomoi);
+            if (checkForTableExists(tblsinhvien) == true) {
 
-                if (mysql.update(tbllop, values, malop + " = ?", new String[]{id_lop}) == 0) {
+                ContentValues values = new ContentValues();
+                values.put(tensv, tenmoi);
+
+                if (mysql.update(tblsinhvien, values, masv + " = ?", new String[]{id_sv}) == 0) {
                     msg = " update record is failed";
                 } else {
                     msg = " update record is successful";
@@ -246,7 +263,30 @@ public class DBManager {
                 Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
 
             } else {
-                Toast.makeText(context, tbllop + " not exists", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, tblsinhvien + " not exists", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(context, "First, create databse", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void deleteStudent(Context context, String id_sv) {
+        mysql = openDatabase();
+        File tmpFile = new File(DATABASE_PATH + DATABASE_NAME);
+        String msg = "";
+        if (tmpFile.exists()) {
+            if (checkForTableExists(tblsinhvien) == true) {
+
+                if (mysql.delete(tblsinhvien, masv + " = ?", new String[]{id_sv}) == 0) {
+                    msg = " delete record is failed";
+                } else {
+                    msg = " delete record is successful";
+                }
+
+                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(context, tblsinhvien + " not exists", Toast.LENGTH_SHORT).show();
             }
         } else {
             Toast.makeText(context, "First, create databse", Toast.LENGTH_SHORT).show();
@@ -254,7 +294,6 @@ public class DBManager {
     }
 
     public ArrayList<Classroom> loadAllClass(Context context) {
-        mysql = openDatabase();
         ArrayList<Classroom> classrooms = null;
         if (checkTableIsEmpty(tbllop)) {
             Toast.makeText(context, tbllop + " don't have data", Toast.LENGTH_SHORT).show();
@@ -272,15 +311,15 @@ public class DBManager {
                 } while (cursor.moveToNext());
             }
             cursor.close();
+
             Toast.makeText(context, "load list class is successful", Toast.LENGTH_SHORT).show();
-            for (Classroom cl : classrooms) {
-                Log.d("TAG", cl.toString());
-            }
+
         }
         return classrooms;
     }
 
-    public void ins_student(Context context, String id_sinhvien, String name, String malop_sinhvien) {
+    public void ins_student(Context context, String id_sinhvien, String name, String
+            malop_sinhvien) {
         mysql = openDatabase();
         File tmpFile = new File(DATABASE_PATH + DATABASE_NAME);
         String msg = "";
@@ -308,9 +347,36 @@ public class DBManager {
         }
     }
 
-    public ArrayList<Student> loadAllStudent(Context context) {
+    public void updateClass(Context context, String id_lop, String tenlopmoi, int sisomoi) {
         mysql = openDatabase();
-        ArrayList<Student> students = null;
+        File tmpFile = new File(DATABASE_PATH + DATABASE_NAME);
+        String msg = "";
+        if (tmpFile.exists()) {
+            if (checkForTableExists(tbllop) == true) {
+
+                ContentValues values = new ContentValues();
+                values.put(tenlop, tenlopmoi);
+                values.put(siso, sisomoi);
+
+                if (mysql.update(tbllop, values, malop + " = ?", new String[]{id_lop}) == 0) {
+                    msg = " update record is failed";
+                } else {
+                    msg = " update record is successful";
+                }
+
+                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(context, tbllop + " not exists", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(context, "First, create databse", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public ArrayList<Student> loadAllStudentByMaLop(Context context, String ma_lop) {
+        ArrayList<Student> students;
+        ArrayList<Student> listFindStudent = null;
         if (checkTableIsEmpty(tblsinhvien)) {
             Toast.makeText(context, tblsinhvien + " dont't have data", Toast.LENGTH_SHORT).show();
         } else {
@@ -327,25 +393,16 @@ public class DBManager {
                 } while (cursor.moveToNext());
             }
             cursor.close();
-
-            for (Student student : students) {
-                Log.d("TAG", student.toString());
+            listFindStudent = new ArrayList<Student>();
+            for (int i = 0; i < students.size(); i++) {
+                if (ma_lop.equals(students.get(i).getMalop().toLowerCase().trim())) {
+                    listFindStudent.add(students.get(i));
+                } else {
+                    Toast.makeText(context, "not found", Toast.LENGTH_SHORT);
+                }
             }
         }
-        return students;
+        return listFindStudent;
     }
 
-    // rong thi true, co data thi false
-    private boolean checkTableIsEmpty(String table) {
-        boolean result = true;
-        mysql = openDatabase();
-        String count = "select count(*) from " + table;
-        Cursor cursor = mysql.rawQuery(count, null);
-        cursor.moveToFirst();
-        int count_row = cursor.getInt(0);
-        if ((count_row > 0)) {
-            result = false;
-        }
-        return result;
-    }
 }

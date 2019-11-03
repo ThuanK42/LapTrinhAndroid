@@ -76,9 +76,9 @@ public class ClassroomManagerActivity extends AppCompatActivity implements View.
 
             case R.id.btn_ins_lop:
 
-                String malop = txt_malop.getText().toString().trim().toLowerCase();
-                String tenlop = txt_tenlop.getText().toString().trim().toLowerCase();
-                int siso = Integer.valueOf(txt_siso.getText().toString());
+                String malop = txt_malop.getText().toString().toLowerCase().trim();
+                String tenlop = txt_tenlop.getText().toString().toLowerCase().trim();
+                int siso = Integer.valueOf(txt_siso.getText().toString().trim());
                 if (malop.isEmpty() || tenlop.isEmpty() || String.valueOf(siso).isEmpty() || siso < 0) {
                     Toast.makeText(this, "please enter all information or correct format", Toast.LENGTH_SHORT).show();
                 } else {
@@ -89,9 +89,9 @@ public class ClassroomManagerActivity extends AppCompatActivity implements View.
                 break;
 
             case R.id.btn_edit_lop:
-                String malop2 = txt_malop.getText().toString().trim().toLowerCase();
-                String tenlop2 = txt_tenlop.getText().toString().trim().toLowerCase();
-                int siso2 = Integer.valueOf(txt_siso.getText().toString());
+                String malop2 = txt_malop.getText().toString().toLowerCase().trim();
+                String tenlop2 = txt_tenlop.getText().toString().toLowerCase().trim();
+                int siso2 = Integer.valueOf(txt_siso.getText().toString().trim());
                 if (malop2.isEmpty() || tenlop2.isEmpty() || String.valueOf(siso2).isEmpty() || siso2 < 0) {
                     Toast.makeText(this, "please enter all information or correct format", Toast.LENGTH_SHORT).show();
                 } else {
@@ -101,8 +101,7 @@ public class ClassroomManagerActivity extends AppCompatActivity implements View.
                 break;
 
             case R.id.btn_del_lop:
-                listClassroom.clear();
-                String malop3 = txt_malop.getText().toString().trim().toLowerCase();
+                String malop3 = txt_malop.getText().toString().toLowerCase().trim();
                 if (malop3.isEmpty()) {
                     Toast.makeText(this, "please enter all information or correct format", Toast.LENGTH_SHORT).show();
                 } else {
