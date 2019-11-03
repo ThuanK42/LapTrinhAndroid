@@ -57,7 +57,6 @@ public class DBManager {
         }
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).trim().equals(table.trim())) {
-                Log.e("TAG", "TABLE is exist");
                 return true;
             }
         }
@@ -397,9 +396,12 @@ public class DBManager {
             for (int i = 0; i < students.size(); i++) {
                 if (ma_lop.equals(students.get(i).getMalop().toLowerCase().trim())) {
                     listFindStudent.add(students.get(i));
-                } else {
-                    Toast.makeText(context, "not found", Toast.LENGTH_SHORT);
                 }
+            }
+            if (listFindStudent.isEmpty()) {
+                Toast.makeText(context, "not found", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "find list student by id class is successful", Toast.LENGTH_SHORT).show();
             }
         }
         return listFindStudent;
