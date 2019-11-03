@@ -407,4 +407,86 @@ public class DBManager {
         return listFindStudent;
     }
 
+    public ArrayList<Student> findStudentByIDStudent(Context context, String id_sv) {
+        ArrayList<Student> students;
+        ArrayList<Student> listFindStudent = null;
+        if (checkTableIsEmpty(tblsinhvien)) {
+            Toast.makeText(context, tblsinhvien + " dont't have data", Toast.LENGTH_SHORT).show();
+        } else {
+            students = new ArrayList<Student>();
+            String sql = "select * from " + tblsinhvien;
+            Cursor cursor = mysql.rawQuery(sql, null);
+            if (cursor.moveToFirst()) {
+                do {
+                    Student student = new Student();
+                    student.setMasv(cursor.getString(0));
+                    student.setTensv(cursor.getString(1));
+                    student.setMalop(cursor.getString(2));
+                    students.add(student);
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+            listFindStudent = new ArrayList<Student>();
+            for (int i = 0; i < students.size(); i++) {
+                if (id_sv.equals(students.get(i).getMasv().toLowerCase().trim())) {
+                    listFindStudent.add(students.get(i));
+                }
+            }
+            if (listFindStudent.isEmpty()) {
+                Toast.makeText(context, "not found", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "find list student by id student is successful", Toast.LENGTH_SHORT).show();
+            }
+        }
+        return listFindStudent;
+    }
+
+    public ArrayList<Student> findStudentByNameStudent(Context context, String name) {
+        ArrayList<Student> students;
+        ArrayList<Student> listFindStudent = null;
+        if (checkTableIsEmpty(tblsinhvien)) {
+            Toast.makeText(context, tblsinhvien + " dont't have data", Toast.LENGTH_SHORT).show();
+        } else {
+            students = new ArrayList<Student>();
+            String sql = "select * from " + tblsinhvien;
+            Cursor cursor = mysql.rawQuery(sql, null);
+            if (cursor.moveToFirst()) {
+                do {
+                    Student student = new Student();
+                    student.setMasv(cursor.getString(0));
+                    student.setTensv(cursor.getString(1));
+                    student.setMalop(cursor.getString(2));
+                    students.add(student);
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+            listFindStudent = new ArrayList<Student>();
+            for (Student st : students) {
+                if (compareName(st.getTensv(), name)) {
+                    listFindStudent.add(st);
+                }
+            }
+            if (listFindStudent.isEmpty()) {
+                Toast.makeText(context, "not found", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(context, "find list student by name student is successful", Toast.LENGTH_SHORT).show();
+            }
+        }
+        return listFindStudent;
+    }
+
+
+    // So sanh ten
+    private boolean compareName(String nameEmp, String nameEmp2) {
+        boolean result = false;
+        nameEmp = nameEmp.trim(); // cat khoang trang dau cuoi
+        nameEmp2 = nameEmp2.trim(); // cat khoang trang dau cuoi
+        String[] name = nameEmp.split(" "); // mang chua cac phan tu duoc cat tu ten 1
+        String[] name2 = nameEmp2.split(" "); // mang chua cac phan tu duoc cat tu ten 2
+        //lay chuoi cuoi trong ten cua 2 dua ra chuyen ve chu thuong sau do kiem tra name 1 co chua nam 2 hay khong
+        if (name[name.length - 1].toLowerCase().equalsIgnoreCase(name2[name2.length - 1].toLowerCase()))
+            return result = true;
+        return result;
+    }
+
 }
