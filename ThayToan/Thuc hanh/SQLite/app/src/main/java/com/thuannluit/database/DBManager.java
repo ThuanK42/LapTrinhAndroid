@@ -158,12 +158,13 @@ public class DBManager {
         }
     }
 
+    // xoa bang
     public void deleteTable_lop(Context context) {
         mysql = openDatabase();
         File tmpFile = new File(context.getApplicationInfo().dataDir + "/databases/" + DATABASE_NAME);
 
-        if (tmpFile.exists()) {
-            if (checkForTableExists(tbllop) == true) {
+        if (tmpFile.exists()) { // neu file database ton tai
+            if (checkForTableExists(tbllop) == true) { // neu bang ton tai thi moi cho xoa
                 mysql.execSQL("drop table if exists " + tbllop);
                 mysql.execSQL("drop table if exists " + tblsinhvien);
                 Toast.makeText(context, "Drop success", Toast.LENGTH_SHORT).show();

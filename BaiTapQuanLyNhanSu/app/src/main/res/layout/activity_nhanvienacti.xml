@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Contructor.nhanVien">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ListView
+        android:id="@+id/lstviewNhanvien"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="458dp" />
+
+    <EditText
+        android:id="@+id/txtNhanVienlylich"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Mã lý lịch"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienduongdan"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="225dp"
+        android:ems="10"
+        android:hint="Đường dẫn hình ảnh"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVientennv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="Tên nhân viên"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienmanv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="Mã nhân viên"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienMacv"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="291dp"
+        android:ems="10"
+        android:hint="Chức vụ"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienMabh"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="291dp"
+        android:ems="10"
+        android:hint="Mã bảo hiểm"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanViensdt"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="349dp"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienemail"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNhanVienmapb"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="Mã phòng ban"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnThemNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="148dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnSuaNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="149dp"
+        android:text="Sửa" />
+
+</RelativeLayout>

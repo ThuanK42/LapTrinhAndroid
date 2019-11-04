@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActi">
+
+    <ListView
+        android:id="@+id/lstviewBH"
+        android:layout_width="409dp"
+        android:layout_height="268dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginBottom="1dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="BẢO HIỂM"
+        android:textColor="#E20004FF"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/btnThemBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="336dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnSuaBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="106dp"
+        android:text="Sửa" />
+
+
+    <EditText
+        android:id="@+id/txtThemBHDenNgay"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="152dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Đến ngày"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtThemBHTuNgay"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Từ ngày"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtThemMaBH"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="494dp"
+        android:ems="10"
+        android:hint="Mã bảo hiểm"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtThemTenBH"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="494dp"
+        android:ems="10"
+        android:hint="Tên bảo hiểm"
+        android:inputType="textPersonName" />
+    <Button
+        android:id="@+id/btnTimKiemBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="37dp"
+        android:text="Tìm Kiếm" />
+
+    <EditText
+        android:id="@+id/txtTimKiemBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="43dp"
+        android:hint="Nhập mã để tìm kiếm"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>

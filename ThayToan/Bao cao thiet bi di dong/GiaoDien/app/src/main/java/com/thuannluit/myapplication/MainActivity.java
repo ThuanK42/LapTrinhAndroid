@@ -59,17 +59,17 @@ public class MainActivity extends AppCompatActivity {
     //danh sach dia chi ip khi dung mang wifi hien tai
     // Chu y: Thay the 192.168.1.9 = dia chi ipv4
     // ip lay danh sach toan bo
-    private static final String URLGETDATA = "http://192.168.43.37:8080/employees/";
+    private static final String URLGETDATA = "http://192.168.1.9:8080/employees/";
     // ip tim nhan vien theo ten
-    private static final String URLFindOneEmployeeByName = "http://192.168.43.37:8080/employees/find-by-name/";
+    private static final String URLFindOneEmployeeByName = "http://192.168.1.9:8080/employees/find-by-name/";
     // ip tim nhan vien theo id
-    private static final String URLFindOneEmployeeById = "http://192.168.43.37:8080/employees/find-by-id/";
+    private static final String URLFindOneEmployeeById = "http://192.168.1.9:8080/employees/find-by-id/";
     //ip tao nhan vien
-    private static final String URLCreateEmployee = "http://192.168.43.37:8080/employees/";
+    private static final String URLCreateEmployee = "http://192.168.1.9:8080/employees/";
     // ip cap nhat thong tin theo id
-    private static final String URLUpdateEmployee = "http://192.168.43.37:8080/employees/";
+    private static final String URLUpdateEmployee = "http://192.168.1.9:8080/employees/";
     // xoa nhan vien theo id : 1 nhan vien
-    private static final String URLDeleteEmployee = "http://192.168.43.37:8080/employees/";
+    private static final String URLDeleteEmployee = "http://192.168.1.9:8080/employees/";
 
     OkHttpClient Client = new OkHttpClient();
 

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HopDongActi">
+
+    <ListView
+        android:id="@+id/lstviewHopDong"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="458dp" >
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="HỢP ĐỒNG LAO ĐỘNG"
+        android:textColor="#E20004FF"
+        android:textSize="60px" />
+
+    <EditText
+        android:id="@+id/txtHopDongMaHD"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="412dp"
+        android:ems="10"
+        android:hint="Mã hợp đồng: "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHopDongMaLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Mã lý lịch"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHopDongMaLoaiHD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="215dp"
+        android:ems="10"
+        android:hint="Mã loại HDLD"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHopDongNguoiKi"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="135dp"
+        android:ems="10"
+        android:hint="Người kí"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHopDongDieuKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="Điều khoản"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHopDongGhiChu"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="347dp"
+        android:ems="10"
+        android:hint="Ghi chú"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtThemHDNgayCapLuong"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="4dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Ngày cấp lương"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtThemHDNgayKi"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="196dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Ngày kí"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtThemHDApDungTN"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="266dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Áp dụng từ ngày"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnThemHopDong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="147dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnSuaHopDong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="148dp"
+        android:text="Sửa" />
+
+    <Button
+        android:id="@+id/btnTimKiemHopDong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="150dp"
+        android:text="Tìm Kiếm" />
+
+    <EditText
+        android:id="@+id/txtTimKiemHopDong"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:hint="Nhập mã để tìm kiếm"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

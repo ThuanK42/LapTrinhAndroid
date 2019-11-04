@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".luongActi">
+
+    <ListView
+        android:id="@+id/lstviewLuong"
+        android:layout_width="409dp"
+        android:layout_height="268dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginBottom="1dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="LƯƠNG"
+        android:textColor="#E20004FF"
+        android:textSize="80px" />
+
+    <Button
+        android:id="@+id/btnThemLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="336dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnSuaLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="106dp"
+        android:text="Sửa" />
+
+
+    <EditText
+        android:id="@+id/txtThemNgayCapNhapLuong"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="148dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Ngày cập nhật lương"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txtThemMaLuong"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="494dp"
+        android:ems="10"
+        android:hint="Mã Lương"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnTimKiemLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="37dp"
+        android:text="Tìm Kiếm" />
+
+    <EditText
+        android:id="@+id/txtTimKiemLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="43dp"
+        android:hint="Nhập mã để tìm kiếm"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtThemBacLuong"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="Bậc Lương"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtThemMucLuong"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="Mức lương"
+        android:inputType="numberDecimal" />
+</RelativeLayout>
