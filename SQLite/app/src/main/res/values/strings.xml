@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LearnSQLite</string>
+    <string name="hint_del_table">Type Table to delete</string>
+    <string name="hint_ins_student">Type malop to reference</string>
+    <string name="btn_create_database">Create Database</string>
+    <string name="btn_delete_database">Delete Database</string>
+    <string name="btn_create_table">Create Table</string>
+    <string name="btn_del_table">Delete Table</string>
+    <string name="btn_ins_lop">Insert Row to tbllop</string>
+    <string name="btn_del_lop">Delete Row From tbllop</string>
+    <string name="btn_update_lop">Update Row to tbllop</string>
+    <string name="btn_load_lop">Querying data tbllop</string>
+    <string name="btn_ins_student">Insert Student</string>
+    <string name="btn_load_student">Querying Sinh vien by malop</string>
+    <string name="txt_malop">Ma lop: </string>
+    <string name="txt_tenlop">Ten lop: </string>
+    <string name="txt_siso">Si so: </string>
+    <string name="txt_danhsachlop">Danh sach lop</string>
+    <string name="txt_masinhvien">Ma sinh vien:</string>
+    <string name="txt_sinhvien">Ten sinh vien:</string>
+    <string name="txt_danhsachsinhvien">Danh sach sinh vien</string>
+    <string name="tbllop">tbllop</string>
+    <string name="tblsinhvien">tblsinhvien</string>
+
+
+</resources>

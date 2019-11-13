@@ -16,13 +16,14 @@
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:src="@drawable/back" />
 
         <ImageButton
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@android:color/white"
             android:src="@drawable/next" />
     </LinearLayout>
 
@@ -45,6 +46,7 @@
             android:inputType="text"
             android:textSize="20sp"
             android:textStyle="italic" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -102,6 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
+            android:background="@android:color/white"
             android:contentDescription="@string/btn_ins_lop"
             android:src="@drawable/add_classroom" />
 
@@ -111,37 +114,20 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
+            android:background="@android:color/white"
             android:contentDescription="@string/btn_update_lop"
             android:src="@drawable/edit_classroom" />
 
-        <ImageButton
-            android:id="@+id/btn_del_lop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:contentDescription="@string/btn_del_lop"
-            android:src="@drawable/delete_classroom" />
-
-        <ImageButton
-            android:id="@+id/btn_load_lop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:contentDescription="@string/btn_load_lop"
-            android:src="@drawable/load" />
     </LinearLayout>
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@android:color/holo_green_light"
+        android:background="@android:color/darker_gray"
         android:gravity="center"
         android:text="@string/txt_danhsachlop"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="30sp" />
 
     <ListView
         android:id="@+id/lv_danhsachlop"
