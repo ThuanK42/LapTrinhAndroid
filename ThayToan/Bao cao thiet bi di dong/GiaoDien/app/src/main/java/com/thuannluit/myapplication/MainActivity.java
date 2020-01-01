@@ -159,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }.execute();
                 } catch (Exception e) {
+                	
                     e.printStackTrace();
                 }
                 resetDataInput();
